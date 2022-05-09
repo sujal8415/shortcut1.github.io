@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #171717;
+        }
+
+        .card {
+            width: 50px; height: 50px;
+            background: rgba(225, 255, 255, 0.144);
+            border-radius: 10px;
+            box-shadow: 0 20px 20px rgba (0, 0, 0.205), inset 0 20px 20px rgba(253, 253, 253, 0.205);
+            margin: 15px; display: flex;
+            justify-content: center; align-items: center;
+            text-decoration: none;
+            font-size: 2em;
+            color: rgba(225, 255, 255, 0.366);
+            position: relative;
+            transition: box-shadow .4s, color .8s, transform .4s;
+        }
+
+        .card:hover {
+            color: #ffffff;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.205),
+            inset 0 20px 10px rgba(255, 255, 255, 0.287),
+            inset 10px 0 20px rgb(225, 58, 58),
+            inset -20px 0 20px rgb(104, 255, 58),
+            inset -30px 0 20px rgb(71, 58, 255);
+            transform: translateY(-10px);
+        }
+        .insta {
+            border-radius: 20%;
+            height: 35px;
+        }
+
+        .bf {
+            border-radius: 25%;
+            height: 37px;
+        }
+
+        .whatsapp {
+            border-radius: 15%;
+            height:38px ;
+        }
+
+        .photo {
+            border-radius: 10px;
+            height: 45px;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="https://www.instagram.com/" class="card">
+        <i class="fab fa-instagram"></i>
+        <img src="insta.jpeg" alt="" class="insta">
+        <a href="https://www.instagram.com/__mr_mukku/"></a>
+        
+    </a>
+    <a href="https://www.facebook.com/" class="card">
+        <i class="fab fa-facebook"></i>
+        <img src="bf.png" alt="" class="bf">
+
+    </a>
+    <a href="https://web.whatsapp.com/" class="card">
+        <i class="fab fa-whatsapp"></i>
+        <img src="whatsapp.png" alt="" class="whatsapp">
+    </a>
+    <a href="#" class="card">
+        <i class="fab fa-twitter"></i>
+        <img src="photo.png" alt="" class="photo">
+    </a>
+</body>
+</html>
